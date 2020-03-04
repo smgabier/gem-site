@@ -6,7 +6,7 @@
 	</head>
         <center>
 		<body style="background-color:blue">
-			<h1> The DevOps Team</h1>
+			<h1> The Awesome DevOps Team</h1>
 			<p>WE DO PRECISION GUESS WORK BASED ON UNRELIABLE</p>
 			<p>DATA PROVIDED BY THOSE OF QUESTIONABLE KNOWLEDGE</p>
 			<table>
