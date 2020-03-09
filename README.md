@@ -1,7 +1,7 @@
 # gem-site
 Technical DevOps Assessment Test
 
-This small test was created to evulate the skill set and understanding of a devops candidate.
+This small test was created to evaluate the skill set and understanding of a devops candidate.
 
 The environment requires the latest ubuntu docker image with the required packages to be installed
 
