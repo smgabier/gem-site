@@ -11,7 +11,6 @@ The environment requires the latest ubuntu docker image with the required packag
   * PHP
   * MYSQL
   * VI
-  * ANSIBLE
   
  The candidate is required to start the ubuntu image with port 80 exposed on the host and configure the above
  applications. The gem-site repository is then required to be pulled into /var/www
