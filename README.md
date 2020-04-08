@@ -18,5 +18,5 @@ The environment requires the latest ubuntu docker image with the required packag
  A db.sql file is located in the gem-site repository which is required to be imported into the mysql database and 
  the correct user account permissions needs to be granted.
  
- The outcome is to load the web page presented by nginx which shoulod display the PHP code and content from the mysql
+ The outcome is to load the web page presented by nginx which should display the PHP code and content from the mysql
  database.
