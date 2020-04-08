@@ -16,7 +16,7 @@
 					<th>Password</th>
 				</tr>
 				
-				<?php $conn = mysqli_connect("localhost", "website", "f878d155d49ac", "company"); 
+				<?php $conn = mysqli_connect("mysql", "website", "f878d155d49ac", "company"); 
 				if ($conn-> connect_error) {
 				 die("Connection failed:". $conn-> connect_error);
 				}
