@@ -5,7 +5,6 @@ You may use google or any other method to assist you in this assessment.
    The following has been configured:
 
    * Docker with the ubuntu image
-   * Ansible
 
 1. CONFIGURE UBUNTU CONTAINER WITH A WEB PAGE AND MYSQL DATABASE.
 
@@ -27,27 +26,20 @@ You may use google or any other method to assist you in this assessment.
       - Create a database called "company".
       - Import the file /var/www/gem-site/db.sql into mysql
 
-   - Access the Web Page at http://157.230.1.253/ which should display content from the code as well as from whats in the database.
+   - Access the Web Page at http://167.172.62.182/ which should display content from the code as well as from whats in the database.
 
 
-2. CONFIFURE A USER ON THE HOST FROM THE LIST OF USERS FOUND WHEN VIEWING THE WEB PAGE.
+2. CONFIFURE A USER ON THE HOST SERVER FROM THE LIST OF USERS FOUND WHEN VIEWING THE WEB PAGE.
    
-   - Create a user and his home directory from anyone of the users diplayed from the web page at http://157.230.1.253
+   - Create a user and his home directory from anyone of the usernames diplayed on the web page at http://167.172.62.182
 
-   - Set the user password with the password displayed from the web page at http://157.230.1.253
+   - Set the user password with the password displayed from the web page at http://167.172.62.182
 
-   - Remove the a user called "hacker.com" and his home directory from the host server.
-
+   - Remove the user called "hacker.com" and his home directory from the host server.
+   
 
 3. CREATE A BASH SCRIPT ON THE HOST THAT DISPLAYS THE DISK I/O EVERY 5 MINUTES.
 
    - The script should send its output to a file in the users home directory created in Step 2.
-
-
-4. CREATE AN ANSIBLE PLAYBOOK THAT WILL INSTALL THE SAME PACKAGES ON THE HOST LIKE YOU DID IN THE CONTAINER.
-
-   - Playbook configuration is setup in /etc/ansible.
-
-
 
 #######################################################################################################################
