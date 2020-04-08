@@ -8,7 +8,7 @@ You may use google or any other method to assist you in this assessment.
 
 1. CONFIGURE UBUNTU CONTAINER WITH A WEB PAGE AND MYSQL DATABASE.
 
-   - Start the ubuntu container with port 80 being expose/natted to the host
+   - Start the ubuntu image with port 80 being expose/natted to the host
 
    - Install GIT in the container
      - Clone the following git repository to /var/www/ --> git@github.com:smgabier/gem-site.git
