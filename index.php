@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-	<title>DevOps Technical Tests</title>
+	<title>I am devops</title>
 	</head>
         <center>
 		<body style="background-color:blue">
