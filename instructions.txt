@@ -16,7 +16,9 @@ You will need to start or join a screen session on the HOST.
 
    - Install GIT in the container
      - Clone the following git repository to /var/www/ --> https://github.com/smgabier/gem-site.git
-     - Edit the index.php file and change the title to something else. Eg: (I am devops)
+     - Edit the index.php file and change the title to something else. Eg: (I am flying)
+     - Add the change in the working directory to the git staging area
+     - Commit the changes with a commit message.
 
    - Install and configure the virtual host in NGINX for gem-site
      - Edit configurations and start nginx
