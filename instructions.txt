@@ -1,19 +1,22 @@
 ######################################### DevOps Techincal Assessment Test ############################################
 
 You may use google or any other method to assist you in this assessment.
+You will need to start or join a screen session on the HOST.
 
-   The following has been configured:
+ --------  The following has been configured ---------
 
-   * Docker with the ubuntu image
+   * Docker has been installed on all HOSTS
+   * AWSCLI has been installed on this HOST
+ 
+ -----------------------------------------------------
 
 1. CONFIGURE UBUNTU CONTAINER WITH A WEB PAGE AND MYSQL DATABASE.
 
    - Start the ubuntu image with port 80 being expose/natted to the host
 
    - Install GIT in the container
-     - Clone the following git repository to /var/www/ --> git@github.com:smgabier/gem-site.git
+     - Clone the following git repository to /var/www/ --> https://github.com/smgabier/gem-site.git
      - Edit the index.php file and change the title to something else. Eg: (I am devops)
-     - Save your changes and merge the changes with the master remote branch    
 
    - Install and configure the virtual host in NGINX for gem-site
      - Edit configurations and start nginx
@@ -25,21 +28,31 @@ You may use google or any other method to assist you in this assessment.
       - Grant access to the user account named "website" from "anywhere" to use the following password "f878d155d49ac"
       - Create a database called "company".
       - Import the file /var/www/gem-site/db.sql into mysql
+      - Take mysqldump of the company database, include the triggers, event and routines, save the dump in /tmp as company.sql
 
-   - Access the Web Page at http://167.172.62.182/ which should display content from the code as well as from whats in the database.
+   - Access the Web Page at http://devops.gli.network which should display content from the code as well as from the database.
 
 
 2. CONFIFURE A USER ON THE HOST SERVER FROM THE LIST OF USERS FOUND WHEN VIEWING THE WEB PAGE.
-   
-   - Create a user and his home directory from anyone of the usernames diplayed on the web page at http://167.172.62.182
 
-   - Set the user password with the password displayed from the web page at http://167.172.62.182
+   - Create a user and his home directory from anyone of the usernames diplayed on the web page at http://devops.gli.network
+   - Set the user password with the password displayed from the web page at http://devops.gli.network
 
-   - Remove the user called "hacker.com" and his home directory from the host server.
-   
+   - Format and mount the 250GB sda device as an LVM volume.
+          - VG Name     : devops-vg
+          - LV Name     : test-lv
+          - File Format : ext4
+          - Mount Point : /mnt     
 
-3. CREATE A BASH SCRIPT ON THE HOST THAT DISPLAYS THE DISK I/O EVERY 5 MINUTES.
+    - Commit and save the running docker container as devops.tar into the /mnt directory
 
-   - The script should send its output to a file in the users home directory created in Step 2.
 
-#######################################################################################################################
+4. MANAGE AN AMAZON AWS EC2 INSTANCE USING AWS CLI FROM THE HOST SERVER
+
+   - Locate and start the instance with id: i-02c9d01b0de12d8d5 
+   - Log into the instance with the devops username which has sudo permission
+   - Copy the devops.tar file from the HOST to AWS EC2 instance
+   - Load the container into the docker registry  
+   - Start the container on the AWS ES2 instance
+
+######################################################################################################################################### 
